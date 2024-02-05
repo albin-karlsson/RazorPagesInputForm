@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesInputForm.Pages.Accounts.CongratsModel
+@{
+}
+
+<h1>Welcome to the newsletter @Model.Username!</h1>
+
+@if(Model.DailyNewsletter) {
+    <h2>A newsletter will be sent to you daily</h2>
+}
+else {
+    <h2>A newsletter will be sent to you weekly</h2>
+}

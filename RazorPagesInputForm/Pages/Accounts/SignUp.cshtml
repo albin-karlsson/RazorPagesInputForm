@@ -1,0 +1,17 @@
+﻿@page
+@model RazorPagesInputForm.Pages.Accounts.SignUpModel
+@{
+}
+
+<form method="post">
+    <label>Username:</label>
+    <input type="text" placeholder="Username" asp-for="@Model.Username"/>
+    <label>Email:</label>
+    <input type="email" placeholder="Email" asp-for="@Model.Email" />
+    <label>Password:</label>
+    <input type="password" placeholder="Password" asp-for="@Model.Password" />
+    <label>Opt-in for daily newsletter:</label>
+    <input type="checkbox" asp-for="@Model.DailyNewsletter" />
+
+    <input class="btn btn-primary" type="submit" value="Sign up for newsletter"/>
+</form>
